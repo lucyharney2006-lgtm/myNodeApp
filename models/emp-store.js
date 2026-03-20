@@ -5,14 +5,14 @@ import JsonStore from './json-store.js';
 
 const empStore = {
 
-  store: new JsonStore('./models/-store.json', { employee: {} }),
-  collection: 'employee',
+  store: new JsonStore('./models/emp-store.json', { employees: [] }),
+  collection: 'employees',
 
 
-  getCardInfo() {
+  getEmpInfo() {
     return this.store.findAll(this.collection);
   },
 
 };
 
-export default card-store;
+export default empStore;
