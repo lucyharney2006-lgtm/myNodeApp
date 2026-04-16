@@ -26,6 +26,7 @@ const playlist = {
     const newSong = {
       id: uuidv4(),
       title: request.body.title,
+      rating: parseInt(request.body.rating),
       artist: request.body.artist,
     };
     playlistStore.addSong(playlistId, newSong);
